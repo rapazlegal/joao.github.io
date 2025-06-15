@@ -33,20 +33,17 @@ a:hover {
 }
 
 .projetos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 1rem;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .projeto {
-    border: 2px solid var(--cor-secundaria);
-    border-radius: 12px;
-    padding: 1rem;
-    width: 300px;
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border: 2px solid #ccc;
+  padding: 16px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
 }
 
 footer {
