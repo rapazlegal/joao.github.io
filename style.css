@@ -1,68 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600;700&display=swap');
 
 :root {
-    --cor-principal: #6E859F;
-    --cor-secundaria: #284260;
-    --cor-destaque: #C92BFC;
-    --fundo: #f3f6fa;
-    --branco: #ffffff;
+  --cor-principal: #6E859F;
+  --cor-secundaria: #284260;
+  --cor-destaque: #C92BFC;
+  --fundo: #f3f6fa;
 }
 
 body {
-    font-family: 'Chakra Petch', sans-serif;
-    background-color: var(--fundo);
-    color: var(--cor-principal);
-    margin: 0;
-    padding: 2rem;
-    text-align: center;
+  font-family: 'Chakra Petch', sans-serif;
+  background-color: var(--fundo);
+  color: var(--cor-principal);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main {
+  max-width: 900px;
+  width: 100%;
+  padding: 2rem;
 }
 
 h1, h2, h3 {
-    color: var(--cor-secundaria);
-    font-weight: 700;
+  color: var(--cor-secundaria);
+  font-weight: 700;
 }
 
 a {
-    color: var(--cor-destaque);
-    text-decoration: none;
-    font-weight: 600;
+  color: var(--cor-destaque);
+  text-decoration: none;
+  font-weight: 600;
 }
 
 a:hover {
-    color: var(--cor-principal);
-    text-decoration: underline;
+  color: var(--cor-principal);
+  text-decoration: underline;
 }
 
 .projetos {
-    display: flex;
-    justify-content: center; 
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .projeto {
-    border: 2px solid var(--cor-destaque);
-    padding: 16px;
-    width: 300px;
-    border-radius: 10px;
-    background-color: var(--branco);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease;
+  border: 2px solid var(--cor-principal);
+  padding: 16px;
+  width: 280px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-align: left;
 }
 
-.projeto:hover {
-    transform: translateY(-5px);
-}
-
-.projeto img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-footer {
-    margin-top: 3rem;
-    border-top: 1px solid #ccc;
-    padding-top: 1rem;
-}
+.projeto h3 {
+  color
