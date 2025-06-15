@@ -5,6 +5,7 @@
     --cor-secundaria: #284260;
     --cor-destaque: #C92BFC;
     --fundo: #f3f6fa;
+    --branco: #ffffff;
 }
 
 body {
@@ -33,17 +34,31 @@ a:hover {
 }
 
 .projetos {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 2rem;
 }
 
 .projeto {
-  border: 2px solid #ccc;
-  padding: 16px;
-  width: 300px;
-  border-radius: 10px;
-  background-color: #f9f9f9;
+    border: 2px solid var(--cor-destaque);
+    padding: 16px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: var(--branco);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
 }
 
 footer {
